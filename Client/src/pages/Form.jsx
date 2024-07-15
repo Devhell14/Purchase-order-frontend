@@ -115,7 +115,7 @@ const Form = () => {
     },
     {
       field: "discount",
-      headerName: "ส่วนลด%",
+      headerName: "ส่วนลด %",
       width: 200,
       renderCell: (params) => {
         const { row } = params;
@@ -471,7 +471,7 @@ const Form = () => {
               จำนวน: {dataItems.length}
             </Typography>
             <Typography variant="subtitle1">ราคา: {sumPrice}</Typography>
-            <Typography variant="subtitle1">ส่วนลด: {sumDiscount}</Typography>
+            <Typography variant="subtitle1">ส่วนลด: {sumDiscount} %</Typography>
             <Typography variant="subtitle1">vat: {sumVat}</Typography>
             <Typography
               variant="subtitle1"
@@ -482,7 +482,7 @@ const Form = () => {
 
             <Stack
               direction="row"
-              alignItems="cener"
+              alignItems="center"
               justifyContent="center"
               spacing={2}
               sx={{ mb: 3 }}
